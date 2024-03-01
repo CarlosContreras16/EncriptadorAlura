@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <main class="container">   
+        <header class="logo">
+            <h1>
+                <img src="img/logo.svg" alt="Logo de Alura y Oracle one">
+            </h1>
+        </header>    
+        <section class="mensaje">
+            <div class="texto-entrada">
+                <textarea id="texto-a-encriptar" class="texto-encriptado"
+            placeholder="Texto a Encriptar"></textarea>            
+            </div>
+
+        <div class="buttons-container">
+            <div class="warning">
+                <img src="img/info.svg" alt="info icon"/>
+                <p id="msj" class="warn-msg">Solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="buttons">
+                <button onclick="btnEncriptar()" class="btn-encriptar">Encriptar</button>
+                <button onclick="btnDesencriptar()" class="btn-desencriptar">Desencriptar</button>
+            </div>   
+            
+        </div>
+        </section> 
+        <section id="output" class="encrypted-container">
+            <div id="vacio" class="encriptador-vacio">
+                <img class="imagen-buscar" src="img/search-img.svg" alt="">
+                <p id="titulo" class="titulo-mensaje">Ningún mensaje fue encontrado</p>
+                <p class="texto-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="mensaje-salida" id="encriptado-final">
+                <div id="encriptado" class="mensaje-encriptado" placeholder="Mensaje Encriptado" readonly>                    
+                    <textarea class="final" id="mensaje-final" readonly></textarea>
+                </div>
+                <button onclick="BtnCopiar()" id="btn-copiar" class="boton-copiar">Copiar</button>
+            </div>
+        </section>              
+    </main>
+
+    <!-- <footer class="pie-pagina">   
+        <div class="caja-footer">
+            <p class="parrafo-footer">
+                Hecho por Carlos Contreras &#174
+            </p>
+        </div>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
