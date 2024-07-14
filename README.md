@@ -2,6 +2,7 @@
 Challenge que se encarga de encriptar el texto que desea el usuario. 
  
  <h3> Encriptador de Texto </h3>
+ 
 ![image](https://github.com/user-attachments/assets/eb9b724f-bf93-493f-a925-1b71a7c5effd)
 
 
